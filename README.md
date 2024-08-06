@@ -39,6 +39,13 @@ cat .git/config
 set-git-user list
 ```
 
+### Search an env user 🔍
+
+```bash
+set-git-user search
+```
+You can search the env key to find the user information.
+
 ### Delete an env user 🗑️
 
 ```bash
@@ -46,7 +53,7 @@ set-git-user delete
 ```
 You can search the env key to delete it.
 
-### Checkout the local env file 🔍
+### Checkout the local env file 📁
 
 ```bash
 set-git-user where

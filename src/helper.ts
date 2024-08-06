@@ -42,3 +42,17 @@ export function checkStorageSize(): void {
 export function getAllEnvList(): Record<string, ISetting> {
   return storage().all
 }
+
+export function entriesEnvList(): Array<{ name: string, value: ISetting }> {
+  const currentList = getAllEnvList()
+
+  return Object
+    .entries(currentList)
+    .map(([name, value]) => ({
+      name,
+      value: {
+        ...value,
+        env: name,
+      },
+    }))
+}
