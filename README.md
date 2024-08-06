@@ -1,37 +1,63 @@
-# pkg-placeholder
+# set-git-user
 
-[![npm version][npm-version-src]][npm-version-href]
-[![npm downloads][npm-downloads-src]][npm-downloads-href]
-[![bundle][bundle-src]][bundle-href]
-[![JSDocs][jsdocs-src]][jsdocs-href]
-[![License][license-src]][license-href]
+Easy way to set git environment variables 🤩
 
-_description_
+## Install 📦
 
-> **Note**:
-> Replace `pkg-placeholder`, `_description_` and `antfu` globally to use this template.
+```bash
+pnpm add -g set-git-user
+```
+It will auto declare the `set-git-user` command in your terminal.
 
-## Sponsors
+## Usage 🔨
+### Add an env user 👨‍💻
 
-<p align="center">
-  <a href="https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg">
-    <img src='https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg'/>
-  </a>
-</p>
+```bash
+set-git-user add
+```
+You will be prompted to enter the env key and the git user information. The key will be used to identify the user information.
+
+If you have already set the env key, you can choose to overwrite the user information or exit it.
+
+### Set the git user 📝
+**💡Tips: You need to execute the command in a git repository.**
+
+```bash
+set-git-user
+```
+
+Yep, it's that simple. You can search the env key to set the git user.
+
+Checkout your local config file to see the user information.
+```bash
+cat .git/config
+```
+
+### List all env users 🧾
+
+```bash
+set-git-user list
+```
+
+### Delete an env user 🗑️
+
+```bash
+set-git-user delete
+```
+You can search the env key to delete it.
+
+### Checkout the local env file 🔍
+
+```bash
+set-git-user where
+```
+
+### Clear the local envs 🧹
+
+```bash
+set-git-user clear
+```
 
 ## License
 
-[MIT](./LICENSE) License © 2024-PRESENT [Anthony Fu](https://github.com/antfu)
-
-<!-- Badges -->
-
-[npm-version-src]: https://img.shields.io/npm/v/pkg-placeholder?style=flat&colorA=080f12&colorB=1fa669
-[npm-version-href]: https://npmjs.com/package/pkg-placeholder
-[npm-downloads-src]: https://img.shields.io/npm/dm/pkg-placeholder?style=flat&colorA=080f12&colorB=1fa669
-[npm-downloads-href]: https://npmjs.com/package/pkg-placeholder
-[bundle-src]: https://img.shields.io/bundlephobia/minzip/pkg-placeholder?style=flat&colorA=080f12&colorB=1fa669&label=minzip
-[bundle-href]: https://bundlephobia.com/result?p=pkg-placeholder
-[license-src]: https://img.shields.io/github/license/antfu/pkg-placeholder.svg?style=flat&colorA=080f12&colorB=1fa669
-[license-href]: https://github.com/antfu/pkg-placeholder/blob/main/LICENSE
-[jsdocs-src]: https://img.shields.io/badge/jsdocs-reference-080f12?style=flat&colorA=080f12&colorB=1fa669
-[jsdocs-href]: https://www.jsdocs.io/package/pkg-placeholder
+[MIT](./LICENSE) License © 2024-PRESENT [SimbaOvO](https://github.com/SimbaOvO)
