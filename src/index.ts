@@ -9,7 +9,7 @@ import {
   searchEnv,
   setEnv,
   whereStorage,
-} from './contorl'
+} from './control'
 
 const argv = process.argv.slice(2)
 
