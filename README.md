@@ -51,16 +51,16 @@ You can search the env key to find the user information.
 ```bash
 set-git-user delete
 ```
-You can search the env key to delete it.
+It will delete the specific env in the local storage. \***NOT**\* the git config.
 
-### Checkout the local env file 📁
+### Checkout the local storage location of the env file 📁
 
 ```bash
 set-git-user where
 ```
 
 ### Clear the local envs 🧹
-
+It will delete all the envs in the local storage. \***NOT**\* the git config.
 ```bash
 set-git-user clear
 ```
