@@ -46,7 +46,8 @@
     "start": "esno src/index.ts",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
-    "prepare": "simple-git-hooks"
+    "prepare": "simple-git-hooks",
+    "beta": "npm publish --tag beta"
   },
   "dependencies": {
     "@inquirer/prompts": "^5.3.8",
