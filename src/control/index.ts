@@ -1,4 +1,7 @@
 import process from 'node:process'
+import path from 'node:path'
+import fs from 'node:fs'
+
 import { confirm, input, search } from '@inquirer/prompts'
 import simpleGit from 'simple-git'
 import {
@@ -137,4 +140,13 @@ export async function deleteStorageKey(): Promise<void> {
   catch (err: any) {
     globalMessage(err.message)
   }
+}
+
+export function showCurrentGitConfig(): void {
+  checkDotGitFolder()
+
+  const configFile = path.join(process.cwd(), '.git', 'config')
+  const config = fs.readFileSync(configFile).toString('utf-8')
+
+  console.log(config)
 }

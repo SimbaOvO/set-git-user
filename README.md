@@ -30,7 +30,7 @@ Yep, it's that simple. You can search the env key to set the git user.
 
 Checkout your local config file to see the user information.
 ```bash
-cat .git/config
+set-git-user current
 ```
 
 ### List all env users 🧾

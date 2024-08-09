@@ -8,6 +8,7 @@ import {
   outputList,
   searchEnv,
   setEnv,
+  showCurrentGitConfig,
   whereStorage,
 } from './control'
 
@@ -20,6 +21,9 @@ else {
   switch (argv[0]) {
     case 'add':
       addEnv()
+      break
+    case 'current':
+      showCurrentGitConfig()
       break
     case 'list':
       outputList()
